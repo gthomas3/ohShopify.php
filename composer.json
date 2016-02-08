@@ -1,0 +1,21 @@
+{
+    "name": "gthomas3/ohShopify.php",
+    "description": "forked php shopify api wrapper.",
+    "homepage": "https://github.com/gthomas3/ohShopify.php",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name": "https://github.com/cmcdonaldca/ohShopify.phps",
+            "email": "https://github.com/cmcdonaldca/ohShopify.php",
+            "homepage": "https://github.com/cmcdonaldca/ohShopify.php"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shopify\\": "src/"
+        }
+    }
+}
