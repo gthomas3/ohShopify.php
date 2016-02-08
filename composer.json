@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "url": "https://github.com/gthomas3/ohShopify.php.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "gthomas3/ohShopify.php"
+    }
+}
