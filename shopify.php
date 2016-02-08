@@ -1,4 +1,5 @@
-<?php
+<?php namespace Shopify;
+
 class ShopifyClient {
 	public $shop_domain;
 	private $token;
