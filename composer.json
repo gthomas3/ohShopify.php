@@ -13,8 +13,8 @@
         "php": ">=5.3.9"
     },
     "autoload": {
-        "psr-0": {
-            "Shopify": "src/"
+        "psr-4": {
+            "Shopify\": "src/"
         }
     }
 }
