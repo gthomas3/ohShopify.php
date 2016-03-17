@@ -1,6 +1,10 @@
-<?php namespace Shopify;
+<?php
 
-class ShopifyClient {
+namespace Shopify;
+
+class ShopifyClient 
+{
+
 	public $shop_domain;
 	private $token;
 	private $api_key;
@@ -34,7 +38,9 @@ class ShopifyClient {
 		$response = json_decode($response, true);
 		if (isset($response['access_token']))
 			return $response['access_token'];
-		return '';
+		else {
+			throw new \Exception("Unable to get access token");
+		}
 	}
 
 	public function callsMade()
@@ -187,4 +193,3 @@ class ShopifyApiException extends \Exception
 	function getResponseHeaders() { return $this->response_headers; }
 	function getResponse() { return $this->response; }
 }
-?>
